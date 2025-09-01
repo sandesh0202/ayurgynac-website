@@ -113,6 +113,19 @@ h1, h2, h3, h4, h5, h6 {
     gap: var(--spacing-sm);
 }
 
+.logo-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-green);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 .logo-circle {
     width: 60px;
     height: 60px;
@@ -759,6 +772,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-md);
 }
 
+.footer-logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-green);
+    object-fit: cover;
+}
+
 .footer-logo h3 {
     font-size: 1.5rem;
     margin: 0;
@@ -927,9 +948,18 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
 
-    .detail-item {
-        flex-direction: column;
+    .card-header {
+        padding: var(--spacing-lg);
         text-align: center;
+    }
+
+    .inauguration-card {
+        margin: 0 var(--spacing-sm);
+        border-radius: 15px;
+    }
+
+    .event-details {
+        padding: var(--spacing-lg);
     }
 
     .footer-content {
@@ -951,9 +981,14 @@ h1, h2, h3, h4, h5, h6 {
         padding: var(--spacing-sm);
     }
 
-    .logo-circle {
+    .logo-image {
         width: 50px;
         height: 50px;
+    }
+
+    .footer-logo-image {
+        width: 40px;
+        height: 40px;
     }
 
     .woman-silhouette {
@@ -975,14 +1010,52 @@ h1, h2, h3, h4, h5, h6 {
 
     .inauguration-banner {
         padding: var(--spacing-md);
+        text-align: center;
     }
 
     .inauguration-banner h3 {
         font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto var(--spacing-xs);
     }
 
     .event-date {
         font-size: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-sm);
+    }
+
+    .detail-item div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .detail-item h4 {
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .detail-item p {
+        text-align: center;
+        margin: 0 auto var(--spacing-xs);
+        word-wrap: break-word;
+    }
+
+    .event-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .event-subtitle {
+        font-size: 1.1rem;
+        text-align: center;
     }
 
     .section-title {
